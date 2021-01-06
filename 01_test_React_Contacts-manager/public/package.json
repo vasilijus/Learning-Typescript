@@ -1,0 +1,23 @@
+{
+    "name": "01_test_react_contacts-manager",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Contacts Manager app",
+  
+    "keywords": [
+      "npx",
+      "npm",
+      "react"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@types/bootstrap": "^5.0.1",
+      "@types/reactstrap": "^8.7.2",
+      "bootstrap": "^4.5.3",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "reactstrap": "^8.8.1"
+    }
+  }
+  
