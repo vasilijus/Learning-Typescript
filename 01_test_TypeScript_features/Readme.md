@@ -40,6 +40,13 @@ Or make one yourself and add options:
 }
 ```
 
+## Compile TS to JS
+
+will auto compile the directory 
+```
+(npx) tsc 
+```
+
 ## Using diffrent types
 
 ### Strings | numbers
@@ -167,5 +174,22 @@ compilerOptions": {
     "target": "ES5",
     // other parameters….
     "experimentalDecorators": true
+}
+```
+
+
+## Compose types using mixins
+```
+class ActiveRecord {
+    Deleted = false;
+}
+class Person extends ActiveRecord {
+    constructor(firstName : string, lastName : string) {
+        this.FirstName = firstName;
+        this.LastName = lastName;
+    }
+
+    FirstName : string;
+    LastName : string;
 }
 ```
