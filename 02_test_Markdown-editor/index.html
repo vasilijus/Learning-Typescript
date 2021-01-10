@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Parser</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css" >
+    
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-lg-6 col-md-6">
+                <textarea name="markdown"  id="markdown" cols="30" rows="10" class="form-control h-100"></textarea>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <label for="markdown" class="h-100" id="markdown-output"></label>
+            </div>
+        </div>
+    </div>
+    <script src="./MarkdownParser.js"></script>
+    <script>
+        new HtmlHandler().TextChangeHandler("markdown", "markdown-output");
+    </script>
+</body>
+</html>
